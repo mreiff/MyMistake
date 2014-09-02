@@ -10,6 +10,19 @@ package hw1reiff;
  *
  * @author mreiff
  */
-public class Creeper {
+public class Creeper implements Mob{
     
+    @Override
+    public void interact(Mob mob) {
+        if(mob instanceof Creeper){
+        System.out.println("Passive");
+        }else{
+            System.out.println("Aggressive");
+        }
+    }
+            
+    @Override
+    public void speak() {
+        System.out.println("Sssssssss");
+    }
 }
