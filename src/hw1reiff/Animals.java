@@ -10,7 +10,7 @@ package hw1reiff;
  *
  * @author mreiff
  */
-public interface Animals {
+public interface Animals extends Mob{
     public void breed(Animals animal);
     public void food();
 }
