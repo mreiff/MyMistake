@@ -11,5 +11,6 @@ package hw1reiff;
  * @author mreiff
  */
 public interface Mob {
-    
+    public void breed(Animals animal);
+    public void food();
 }
