@@ -10,6 +10,19 @@ package hw1reiff;
  *
  * @author mreiff
  */
-public class Zombie {
+public class Zombie implements Mob{
     
+    @Override
+    public void interact(Mob mob) {
+        if(mob instanceof Animals){
+            System.out.println("Aggressive");
+        }else {
+            System.out.println("Passive");
+        }
+    }
+
+    @Override
+    public void speak(){
+        System.out.println("Arrg!");
+    }
 }
